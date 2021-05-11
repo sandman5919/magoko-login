@@ -1,4 +1,4 @@
-# MagOKO Login
+# MagOKO Login [![Build](https://github.com/deepinthink-magoko/magoko-login/actions/workflows/maven.yml/badge.svg)](https://github.com/deepinthink-magoko/magoko-login/actions/workflows/maven.yml)
 DEEPINTHINK MagOKO Login server implementation.
 
 ## License
