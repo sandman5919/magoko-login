@@ -18,5 +18,7 @@
   <modules>
     <module>magoko-login-bom</module>
     <module>magoko-login-build-parent</module>
+    <module>magoko-login-server-core</module>
+    <module>magoko-starter-login-server</module>
   </modules>
 </project>
