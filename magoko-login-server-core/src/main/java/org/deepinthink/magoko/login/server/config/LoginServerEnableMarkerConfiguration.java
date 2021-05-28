@@ -13,15 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.deepinthink.magoko.login.server.core;
+package org.deepinthink.magoko.login.server.config;
 
-import java.lang.annotation.*;
-import org.deepinthink.magoko.login.server.core.config.LoginServerEnableMarkerConfiguration;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
-@Inherited
-@Documented
-@Import(LoginServerEnableMarkerConfiguration.class)
-public @interface EnableLoginServer {}
+@Configuration(proxyBeanMethods = false)
+public class LoginServerEnableMarkerConfiguration {
+
+  @Bean
+  public Marker loginServerEnableMarker() {
+    return new Marker();
+  }
+
+  class Marker {}
+}
